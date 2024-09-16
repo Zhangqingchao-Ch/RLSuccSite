@@ -1,0 +1,8 @@
+torch == 2.1.1
+torchrl == 0.2.1
+tensordict == 0.2.1
+tqdm == 4.66.1
+numpy == 1.24.4
+pandas == 2.0.3
+Bio == 1.4.0
+protlearn == 0.0.3
