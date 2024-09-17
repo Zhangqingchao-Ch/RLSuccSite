@@ -49,7 +49,7 @@ class PPOEnvZcc(EnvBase):
         logits = tensordict["logits"].squeeze(-1).detach().numpy()
 
         RewardTP = 10.0 * (1.0 + self.step / self.total_frames) * self.ratio
-        RewardTN = 10.0 * (1.6 - self.step / self.total_frames)
+        RewardTN = 10.0 * (1.1 - self.step / self.total_frames)
         RewardFN = -10.0 * (1.0 + self.step / self.total_frames) * self.ratio
         RewardFP = -10.0 * (0.1 + self.step / self.total_frames)
 
