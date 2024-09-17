@@ -48,6 +48,8 @@ class PPOEnvZcc(EnvBase):
         action = np.argmax(action).item()
         logits = tensordict["logits"].squeeze(-1).detach().numpy()
 
+        # 平衡会奖励机制
+        # 参数自调
         RewardTP = 10.0 * (1.0 + self.step / self.total_frames) * self.ratio
         RewardTN = 10.0 * (1.1 - self.step / self.total_frames)
         RewardFN = -10.0 * (1.0 + self.step / self.total_frames) * self.ratio
