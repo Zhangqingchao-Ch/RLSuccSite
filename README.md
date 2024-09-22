@@ -1,4 +1,4 @@
-# RLSuccSite：Succinylation Sites Prediction Based on Reinforcement Learning Dynamic and Balanced Reward Mechanism and Three-Peaks Enhanced Method for Physicochemical Property Scores
+# RLSuccSite：Succinylation Sites Prediction Based on Reinforcement Learning Dynamic with Balanced Reward Mechanism and Three-Peaks Enhanced Method for Physicochemical Property Scores
 
 1.Environment：
 pip install -r requirements.txt
